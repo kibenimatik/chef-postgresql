@@ -3,7 +3,7 @@ maintainer       "Phil Cohen"
 maintainer_email "github@phlippers.net"
 license          "MIT"
 description      "Installs PostgreSQL, The world's most advanced open source database."
-long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
+long_description IO.read(File.join(File.dirname(__FILE__), "README.md")).force_encoding('utf-8')
 version          "0.16.0"
 
 recipe "postgresql",                   "Set up the apt repository and install dependent packages"
